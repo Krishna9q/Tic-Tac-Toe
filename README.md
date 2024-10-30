@@ -29,7 +29,7 @@ Welcome to the **Tic Tac Toe Game**! This is a classic 2-player game created wit
 
 ## 🎉 Demo
 
-Experience the game live: [Tic Tac Toe Game Demo]([https://your-game-demo-link.com](https://krishna-ox.netlify.app/))
+Experience the game live: [Tic Tac Toe Game Demo]([https://your-game-demo-link.com](https://krishna-ox.netlify.app/)
 
 ## 📂 File Structure
 
