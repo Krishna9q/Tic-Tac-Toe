@@ -2,7 +2,7 @@
 
 Welcome to the **Tic Tac Toe Game**! This is a classic 2-player game created with **HTML, CSS, and JavaScript**. Enjoy a sleek design, smooth gameplay, and fun animations while challenging your friends!
 
-![Tic Tac Toe Screenshot]((https://github.com/user-attachments/assets/9963b8dc-eaab-409d-af51-d1376034f812) <!-- Add a screenshot of your game here -->
+![Tic Tac Toe Screenshot](https://github.com/user-attachments/assets/9963b8dc-eaab-409d-af51-d1376034f812) <!-- Add a screenshot of your game here -->
 
 ## 🚀 Features
 
