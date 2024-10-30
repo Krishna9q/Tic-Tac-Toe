@@ -2,7 +2,7 @@
 
 Welcome to the **Tic Tac Toe Game**! This is a classic 2-player game created with **HTML, CSS, and JavaScript**. Enjoy a sleek design, smooth gameplay, and fun animations while challenging your friends!
 
-![Tic Tac Toe Screenshot](link-to-screenshot.png) <!-- Add a screenshot of your game here -->
+![Tic Tac Toe Screenshot]((https://github.com/user-attachments/assets/9963b8dc-eaab-409d-af51-d1376034f812) <!-- Add a screenshot of your game here -->
 
 ## 🚀 Features
 
@@ -26,14 +26,6 @@ Welcome to the **Tic Tac Toe Game**! This is a classic 2-player game created wit
 - **HTML**: Structure of the game board and elements.
 - **CSS**: Styling for the board, winning animations, and responsive design.
 - **JavaScript**: Game logic, including turn management, win conditions, and draw detection.
-
-## 📸 Screenshots
-
-| Initial Screen          | Player Move          | Winning Screen        |
-| ----------------------- | -------------------- | --------------------- |
-| [Start]![image](https://github.com/user-attachments/assets/9963b8dc-eaab-409d-af51-d1376034f812)
-) | ![Move](![image](https://github.com/user-attachments/assets/63966414-7201-4fb8-9b84-32fe7ae5f65c)
-) | ![Win]() |
 
 ## 🎉 Demo
 
