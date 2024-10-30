@@ -4,42 +4,42 @@ let newGameBtn = document.querySelector("#newgame-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector(".msg");
 
-let turnO = true; //playerX ,playerO
+
 let count = 0;
+
+let turnSymbol = "O"; // Track the current symbol during the game
 
 const winPatters = [
   [0, 1, 2],
-  [0, 3, 6],
-  [0, 4, 8],
-  [1, 4, 7],
-  [2, 5, 8],
-  [2, 4, 6],
   [3, 4, 5],
   [6, 7, 8],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 3, 6],
+  [0, 4, 8],
+  [2, 4, 6],
 ];
 
 const resetGame = () => {
-  turnO = true;
   count = 0;
   enableBoxes();
   msgContainer.classList.add("hide");
+  // Toggle the start symbol for the next game
+  turnSymbol = turnSymbol === "X" ? "O" : "X";
 };
 
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
-    if (turnO) {
-      // PlayerO
-      box.innerText = "O";
-      turnO = false;
-    } else {
-      // PlayerX
-      box.innerText = "X";
-      turnO = true;
-    }
-
+    box.innerText = turnSymbol;
     box.disabled = true;
-    count++
+
+    count++; // Increment move count
     checkWinner();
+
+    // Alternate turn symbol
+    turnSymbol = turnSymbol === "X" ? "O" : "X";
+    
+    
   });
 });
 
@@ -67,6 +67,7 @@ const draw = () => {
   disableBoxes();
 };
 const checkWinner = () => {
+  let winnerfound = false;
   for (let pattern of winPatters) {
     let pos1Val = boxes[pattern[0]].innerText;
     let pos2Val = boxes[pattern[1]].innerText;
@@ -74,13 +75,17 @@ const checkWinner = () => {
     if (pos1Val != "" && (pos2Val != "") & (pos3Val != "")) {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         showWinner(pos1Val);
+        winnerfound = true;
+        
+
+
       }
     }
-  }
-  if (count ===9) {
-    console.log(count);
-    
-    draw();
+
+    if(!winnerfound && count===9){
+      draw();
+    }
+
   }
 };
 
